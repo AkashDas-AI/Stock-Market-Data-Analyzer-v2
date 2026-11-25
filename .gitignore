@@ -1,0 +1,55 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# VS Code local state (keep settings.json shared, ignore private state)
+.vscode/*
+!.vscode/settings.json
+
+# Raw and generated data (keep .gitkeep, ignore data files)
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Generated figures and reports
+outputs/charts/*
+!outputs/charts/.gitkeep
+outputs/tables/*
+!outputs/tables/.gitkeep
+reports/generated/*
+!reports/generated/.gitkeep
+reports/verify_phase11/
+
+# Private Interview Preparation Files (Local reference only, exclude from GitHub)
+docs/INTERVIEW_*.md
+docs/*INTERVIEW*
+docs/prep/
+scratch/
