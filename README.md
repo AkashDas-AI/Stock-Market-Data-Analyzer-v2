@@ -5,7 +5,8 @@
 An institutional-grade quantitative financial analysis and time-series engineering platform. Features automated market data ingestion via Yahoo Finance, rigorous data validation, exploratory statistics, technical indicator computation, risk modeling, interactive Streamlit dashboards, structured evidence-based financial interpretation, and publication-ready multi-format report publishing (PDF, HTML, and CSV).
 
 Author: Akash Das  
-Repository: stock-market-data-analyzer-v2  
+Repository: [AkashDas-AI/Stock-Market-Data-Analyzer-v2](https://github.com/AkashDas-AI/Stock-Market-Data-Analyzer-v2)  
+Status: All 12 Phases Completed (Officially Published)  
 License: MIT  
 
 ---
