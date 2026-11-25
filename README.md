@@ -1,9 +1,11 @@
 # Stock Market Data Analyzer
 
+### Enhanced Edition | 2026
+
 An institutional-grade quantitative financial analysis and time-series engineering platform. Features automated market data ingestion via Yahoo Finance, rigorous data validation, exploratory statistics, technical indicator computation, risk modeling, interactive Streamlit dashboards, structured evidence-based financial interpretation, and publication-ready multi-format report publishing (PDF, HTML, and CSV).
 
 Author: Akash Das  
-Repository: stock-market-data-analyzer  
+Repository: stock-market-data-analyzer-v2  
 License: MIT  
 
 ---
@@ -25,28 +27,29 @@ License: MIT
 ## Table of Contents
 
 1. [Project Overview](#1-project-overview)
-2. [Project Objectives](#2-project-objectives)
-3. [Key Features](#3-key-features)
-4. [Technological Stack](#4-technological-stack)
-5. [System Architecture](#5-system-architecture)
-6. [The Data Workflow](#6-the-data-workflow)
-7. [Evidence-Based Financial Insights and Interpretation](#7-evidence-based-financial-insights-and-interpretation)
-8. [Analytical and Mathematical Methodology](#8-analytical-and-mathematical-methodology)
-9. [Dataset Architecture and Provenance](#9-dataset-architecture-and-provenance)
-10. [Streamlit Interactive Dashboard](#10-streamlit-interactive-dashboard)
-11. [Dashboard Screenshots and Visual Interface](#11-dashboard-screenshots-and-visual-interface)
-12. [Multi-Format Report Generation](#12-multi-format-report-generation)
-13. [Project Directory Structure](#13-project-directory-structure)
-14. [Virtual Environment Setup](#14-virtual-environment-setup)
-15. [Dependency Installations](#15-dependency-installations)
-16. [Application Execution and Launch](#16-application-execution-and-launch)
-17. [Running Tests and Quality Assurance](#17-running-tests-and-quality-assurance)
-18. [Example End-to-End Workflow](#18-example-end-to-end-workflow)
-19. [Privacy, Security, and Ethical Safeguards](#19-privacy-security-and-ethical-safeguards)
-20. [Limitations and Regulatory Boundaries](#20-limitations-and-regulatory-boundaries)
-21. [Future Improvements and Roadmap](#21-future-improvements-and-roadmap)
-22. [Contribution Guidelines](#22-contribution-guidelines)
-23. [License and Author Attribution](#23-license-and-author-attribution)
+2. [Project Evolution and Previous Implementation](#2-project-evolution-and-previous-implementation)
+3. [Project Objectives](#3-project-objectives)
+4. [Key Features](#4-key-features)
+5. [Technological Stack](#5-technological-stack)
+6. [System Architecture](#6-system-architecture)
+7. [The Data Workflow](#7-the-data-workflow)
+8. [Evidence-Based Financial Insights and Interpretation](#8-evidence-based-financial-insights-and-interpretation)
+9. [Analytical and Mathematical Methodology](#9-analytical-and-mathematical-methodology)
+10. [Dataset Architecture and Provenance](#10-dataset-architecture-and-provenance)
+11. [Streamlit Interactive Dashboard](#11-streamlit-interactive-dashboard)
+12. [Dashboard Screenshots and Visual Interface](#12-dashboard-screenshots-and-visual-interface)
+13. [Multi-Format Report Generation](#13-multi-format-report-generation)
+14. [Project Directory Structure](#14-project-directory-structure)
+15. [Virtual Environment Setup](#15-virtual-environment-setup)
+16. [Dependency Installations](#16-dependency-installations)
+17. [Application Execution and Launch](#17-application-execution-and-launch)
+18. [Running Tests and Quality Assurance](#18-running-tests-and-quality-assurance)
+19. [Example End-to-End Workflow](#19-example-end-to-end-workflow)
+20. [Privacy, Security, and Ethical Safeguards](#20-privacy-security-and-ethical-safeguards)
+21. [Limitations and Regulatory Boundaries](#21-limitations-and-regulatory-boundaries)
+22. [Future Improvements and Roadmap](#22-future-improvements-and-roadmap)
+23. [Contribution Guidelines](#23-contribution-guidelines)
+24. [License and Author Attribution](#24-license-and-author-attribution)
 
 ---
 
@@ -60,7 +63,33 @@ This application provides a transparent, mathematically deterministic quantitati
 
 ---
 
-## 2. Project Objectives
+
+
+---
+
+## 2. Project Evolution and Previous Implementation
+
+This repository represents the Enhanced Edition (2026) of the Stock Market Data Analyzer project. It succeeds an earlier, initial implementation previously developed and published by the author:
+
+- Previous GitHub Repository: [AkashDas-AI/Stock-Market-Data-Analyzer](https://github.com/AkashDas-AI/Stock-Market-Data-Analyzer)
+- Initial Project Title: Stock Market Data Analyzer
+
+### Architectural Evolution and Enhancements
+
+While the original project established foundational financial data fetching and visualization workflows, this enhanced edition introduces a completely re-engineered, institutional-grade quantitative architecture:
+
+- Invariant-Based Data Cleansing: Strict mathematical validation rules ensuring chronological sorting, duplicate removal, price positivity, and physical OHLC boundary enforcement.
+- Formal Analytical Calculations: Deterministic vector calculations for Simple Moving Averages (SMA 20, SMA 50), Exponential Moving Average (EMA 20), compounded cumulative growth, and peak-to-trough Maximum Drawdown.
+- Structured Financial Interpretation: Automated qualitative interpretation engine translating mathematical signals into evidence-based observations without unsupported market participant assumptions.
+- Production-Grade Web Application: Multi-tab Streamlit dashboard with high-contrast accessibility themes, dynamic financial KPI cards, and custom CSS layout controls.
+- Publication-Quality Reporting Suite: Automated compilation of 10 to 11 page vector PDF documents (using ReportLab two-pass NumberedCanvas), interactive Plotly HTML reports, and standardized analytical CSV exports.
+- Automated Test Suite: Complete test coverage verified by 268 passing Pytest tests across 13 test modules with full API network mocking.
+
+The original implementation remains preserved in its original repository for historical reference and portfolio continuity.
+
+---
+
+## 3. Project Objectives
 
 - Data Integrity Enforcement: Establish an invariant cleaning engine that enforces chronological monotonicity, non-negativity, and strict OHLC price boundary conditions across all data sources.
 - Deterministic Mathematical Modeling: Calculate moving averages, geometric compounding returns, annualized volatility, and peak-to-trough drawdowns using exact, closed-form formulas without approximations.
@@ -71,7 +100,7 @@ This application provides a transparent, mathematically deterministic quantitati
 
 ---
 
-## 3. Key Features
+## 4. Key Features
 
 - Automated Market Data Retrieval: Fetch daily OHLCV bars directly from Yahoo Finance via yfinance for any standard equity ticker symbol with user-defined start and end dates.
 - Flexible Data Ingestion Modes: Support three mutually exclusive ingestion workflows: Live Yahoo Finance queries, drag-and-drop CSV uploads, and a pre-packaged offline synthetic dataset.
@@ -87,7 +116,7 @@ This application provides a transparent, mathematically deterministic quantitati
 
 ---
 
-## 4. Technological Stack
+## 5. Technological Stack
 
 | Component | Library / Tool | Pinned Version | Architectural Role and Responsibility |
 | :--- | :--- | :---: | :--- |
@@ -106,7 +135,7 @@ This application provides a transparent, mathematically deterministic quantitati
 
 ---
 
-## 5. System Architecture
+## 6. System Architecture
 
 The Stock Market Data Analyzer follows a modular 4-tier separation of concerns:
 
@@ -148,7 +177,7 @@ Key Design Patterns:
 
 ---
 
-## 6. The Data Workflow
+## 7. The Data Workflow
 
 The data lifecycle follows seven strictly validated sequential stages:
 
@@ -193,7 +222,7 @@ The data lifecycle follows seven strictly validated sequential stages:
 
 ---
 
-## 7. Evidence-Based Financial Insights and Interpretation
+## 8. Evidence-Based Financial Insights and Interpretation
 
 The application includes a deterministic heuristic interpretation engine implemented in `StockInsightAnalyzer`. Rather than presenting raw figures in isolation, the system evaluates quantitative relationships and formats them into categorized, audit-ready observations:
 
@@ -220,7 +249,7 @@ Every generated insight carries an immutable structured dictionary recording exa
 
 ---
 
-## 8. Analytical and Mathematical Methodology
+## 9. Analytical and Mathematical Methodology
 
 ### Invariant OHLC Relationships
 Every bar must satisfy the physical realities of continuous double-auction exchange trading:
@@ -258,7 +287,7 @@ Correlation Caution: High correlation between indicators and prices reflects sha
 
 ---
 
-## 9. Dataset Architecture and Provenance
+## 10. Dataset Architecture and Provenance
 
 ### Ingestion Source Options
 1. Live Yahoo Finance:
@@ -279,7 +308,7 @@ Correlation Caution: High correlation between indicators and prices reflects sha
 
 ---
 
-## 10. Streamlit Interactive Dashboard
+## 11. Streamlit Interactive Dashboard
 
 The web application is launched via Streamlit and features a modular 5-tab interface:
 
@@ -307,7 +336,7 @@ Located above the tabbed workspace in a 6-card responsive grid:
 
 ---
 
-## 11. Dashboard Screenshots and Visual Interface
+## 12. Dashboard Screenshots and Visual Interface
 
 The visual design system uses an institutional dark theme (`#0E1117` background, `#161B22` containers, `#FFFFFF` text) meeting WCAG 2.1 AA high-contrast standards.
 
@@ -333,7 +362,7 @@ Tab 5 export manager featuring dedicated download triggers for vector PDF report
 
 ---
 
-## 12. Multi-Format Report Generation
+## 13. Multi-Format Report Generation
 
 The reporting suite compiles five publication artifacts:
 
@@ -357,7 +386,7 @@ The reporting suite compiles five publication artifacts:
 
 ---
 
-## 13. Project Directory Structure
+## 14. Project Directory Structure
 
 ```text
 Stock-Market-Data-Analyzer/
@@ -461,15 +490,15 @@ Stock-Market-Data-Analyzer/
 
 ---
 
-## 14. Virtual Environment Setup
+## 15. Virtual Environment Setup
 
 This application has been verified on Windows 10 and Windows 11 using Python 3.11.
 
 ### Step 1: Clone the Repository
 Open a terminal and clone the repository:
 ```cmd
-git clone https://github.com/your-username/stock-market-data-analyzer.git
-cd stock-market-data-analyzer
+git clone https://github.com/your-username/stock-market-data-analyzer-v2.git
+cd stock-market-data-analyzer-v2
 ```
 
 ### Step 2: Create a Local Virtual Environment
@@ -494,7 +523,7 @@ python -m venv .venv
 
 ---
 
-## 15. Dependency Installations
+## 16. Dependency Installations
 
 With the virtual environment activated, install the pinned project dependencies:
 
@@ -510,7 +539,7 @@ pip list
 
 ---
 
-## 16. Application Execution and Launch
+## 17. Application Execution and Launch
 
 ### Running the Streamlit Web Application
 Execute the verified Streamlit launch command from the repository root:
@@ -537,7 +566,7 @@ python main.py --sample
 
 ---
 
-## 17. Running Tests and Quality Assurance
+## 18. Running Tests and Quality Assurance
 
 The codebase enforces strict test coverage with 268 automated tests across 13 test modules:
 
@@ -567,7 +596,7 @@ Result: `268 passed in 70.26s (0 failures, 0 errors, 0 warnings)`.
 
 ---
 
-## 18. Example End-to-End Workflow
+## 19. Example End-to-End Workflow
 
 1. Launch Dashboard: Run `python -m streamlit run app/dashboard.py` and navigate to `http://localhost:8501`.
 2. Configure Data Ingestion: Select "Live Yahoo Finance", type `NVDA`, and pick a 1-year historical date range.
@@ -580,7 +609,7 @@ Result: `268 passed in 70.26s (0 failures, 0 errors, 0 warnings)`.
 
 ---
 
-## 19. Privacy, Security, and Ethical Safeguards
+## 20. Privacy, Security, and Ethical Safeguards
 
 - Zero Hardcoded Credentials: An automated security audit confirms zero API keys, secrets, access tokens, or private credentials exist within tracked repository files.
 - Safe Environment Isolation: The `.env` file is explicitly ignored in `.gitignore`, with only a safe template (`.env.example`) retained in the repository.
@@ -590,7 +619,7 @@ Result: `268 passed in 70.26s (0 failures, 0 errors, 0 warnings)`.
 
 ---
 
-## 20. Limitations and Regulatory Boundaries
+## 21. Limitations and Regulatory Boundaries
 
 1. Educational and Research Nature: This application is developed exclusively for educational, quantitative research, and portfolio demonstration purposes. It does not constitute financial, investment, legal, or tax advice.
 2. No Predictive Guarantees: Moving averages, historical volatility, and past drawdowns are backward-looking descriptive metrics. Past performance does not guarantee or predict future equity market returns.
@@ -600,7 +629,7 @@ Result: `268 passed in 70.26s (0 failures, 0 errors, 0 warnings)`.
 
 ---
 
-## 21. Future Improvements and Roadmap
+## 22. Future Improvements and Roadmap
 
 - Expanded Technical Indicators: Incorporate Relative Strength Index (RSI), Moving Average Convergence Divergence (MACD), and Bollinger Bands.
 - Multi-Asset Portfolio Comparisons: Enable simultaneous multi-ticker ingestion with portfolio covariance matrices and Sharpe ratio evaluation.
@@ -609,7 +638,7 @@ Result: `268 passed in 70.26s (0 failures, 0 errors, 0 warnings)`.
 
 ---
 
-## 22. Contribution Guidelines
+## 23. Contribution Guidelines
 
 Contributions are welcome. Please adhere to the following workflow:
 1. Fork the repository and create a feature branch (`git checkout -b feature/new-indicator`).
@@ -620,7 +649,7 @@ Contributions are welcome. Please adhere to the following workflow:
 
 ---
 
-## 23. License and Author Attribution
+## 24. License and Author Attribution
 
 Author: Akash Das  
 Project: Stock Market Data Analyzer  
