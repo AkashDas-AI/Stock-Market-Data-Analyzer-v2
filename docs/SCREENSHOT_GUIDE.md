@@ -100,3 +100,18 @@ Positioned directly above the workspace tabs in a 6-column grid:
   4. `Download Analytical Dataset (CSV)`: 16-column dataset including all indicators and risk metrics.
   5. `Download Insights Summary (CSV)`: Tabular export of all qualitative findings.
 - **Batch Generator:** One-click button generating all five artifacts simultaneously into `reports/generated/`.
+
+---
+
+## 3. Captured Application Screenshots Inventory
+
+The repository includes high-resolution UI captures located under [`images/`](../images):
+
+| Image Reference | Source Path | View & Purpose |
+| :--- | :--- | :--- |
+| **Dashboard Overview** | [`images/dashboard/dashboard_overview.png`](../images/dashboard/dashboard_overview.png) | High-level application layout, KPI cards, sidebar controls, and synthetic data banner |
+| **Candlestick & Technical** | [`images/dashboard/candlestick_chart.png`](../images/dashboard/candlestick_chart.png) | Tab 1 interactive Plotly candlestick chart with volume subplot and SMA/EMA overlays |
+| **Returns & Risk Analysis** | [`images/dashboard/returns_and_risk.png`](../images/dashboard/returns_and_risk.png) | Tab 2 daily return distribution, cumulative wealth trajectory, and underwater drawdown |
+| **Insights & Interpretation** | [`images/dashboard/insights_view.png`](../images/dashboard/insights_view.png) | Tab 3 structured heuristic cards, quadrant summary, momentum signals, and evidence metrics |
+| **Reports & Downloads** | [`images/reports/report_downloads.png`](../images/reports/report_downloads.png) | Tab 5 multi-format export cards for PDF, HTML, and CSV analytical dossiers |
+

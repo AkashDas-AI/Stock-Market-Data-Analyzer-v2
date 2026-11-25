@@ -55,10 +55,10 @@ Every execution entry must adhere to the following schema:
   - CLI Verification: `streamlit --version` (1.67.0) and `pytest --version` (9.2.0) `[VERIFIED]`
   - Git Isolation: `.venv/` verified excluded from Git untracked files `[VERIFIED]`
 - **Artifacts / Outputs Created**:
-  - [`.venv/`](file:///d:/Projects/Python/Stock%20Market%20Data%20Analyzer/.venv/)
-  - [`.vscode/settings.json`](file:///d:/Projects/Python/Stock%20Market%20Data%20Analyzer/.vscode/settings.json)
-  - [`.gitignore`](file:///d:/Projects/Python/Stock%20Market%20Data%20Analyzer/.gitignore)
-  - [`requirements.txt`](file:///d:/Projects/Python/Stock%20Market%20Data%20Analyzer/requirements.txt)
+  - `[`.venv/`](../.venv/)` (local virtual environment directory)
+  - [`settings.json`](../.vscode/settings.json)
+  - [`.gitignore`](../.gitignore)
+  - [`requirements.txt`](../requirements.txt)
 - **Status Gate**: `[PASSED]`
 
 ### Entry #002: Phase 1 — Final Validation & .gitignore Correction
