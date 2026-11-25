@@ -1,14 +1,25 @@
-# Stock Market Data Analyzer - Direct Project Dependencies
-# Phase 1: Environment Setup
-# Generated for Python 3.11
+# Stock Market Data Analyzer - Project Dependencies
+# Author: Akash Das
+# Enhanced Edition | 2026
 
-pandas==3.1.1
-numpy==2.4.6
-matplotlib==3.11.2
-seaborn==0.13.2
-yfinance==1.8.0
-plotly==7.1.0
-streamlit==1.67.0
-pytest==9.2.0
-reportlab==5.1.2
-pypdf==7.1.1
+# Data Manipulation & Scientific Computing
+pandas==3.1.1             # Data manipulation, financial time series, and tabular analysis
+numpy==2.4.6              # Numerical computing and mathematical operations
+
+# Financial Market Data Collection
+yfinance==1.8.0           # Historical stock market data retrieval from Yahoo Finance
+
+# Data Visualization & Chart Generation
+matplotlib==3.11.2        # Static financial charts and publication-quality visualizations
+seaborn==0.13.2           # Statistical visualizations and correlation heatmaps
+plotly==7.1.0             # Interactive financial charts and visualizations
+
+# Interactive Dashboard & Web Application
+streamlit==1.67.0         # Interactive stock analysis dashboard and web application
+
+# Report Generation & PDF Processing
+reportlab==5.1.2          # PDF analytical report generation
+pypdf==7.1.1              # PDF reading, inspection, and validation
+
+# Testing & Quality Assurance
+pytest==9.2.0             # Automated unit, integration, and regression testing
