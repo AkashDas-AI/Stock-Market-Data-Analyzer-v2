@@ -53,3 +53,6 @@ docs/INTERVIEW_*.md
 docs/*INTERVIEW*
 docs/prep/
 scratch/
+
+# Local Cleanup & Restoration Reference (Local reference only, exclude from GitHub)
+docs/LOCAL_CLEANUP_AND_RESTORATION_GUIDE.md
